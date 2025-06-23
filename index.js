@@ -39,29 +39,29 @@
         .catch(error => console.error('Error loading posts:', error));
     }
 
-    // loadPosts();
+    loadPosts();
 
-    // postForm.addEventListener('submit', function (e) {
-    //   e.preventDefault();
+    postForm.addEventListener('submit', function (e) {
+      e.preventDefault();
 
-    //   const newPost = {
-    //     title: document.getElementById('title').value,
-    //     author: document.getElementById('author').value,
-    //     image: document.getElementById('image').value
-    //   };
+      const newPost = {
+        title: document.getElementById('title').value,
+        author: document.getElementById('author').value,
+        image: document.getElementById('image').value
+      };
 
-    //   fetch('http://localhost:3000/posts', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify(newPost)
-    //   })
-    //     .then(response => response.json())
-    //     .then(data => {
-    //       console.log('Post added:', data);
-    //       loadPosts();
-    //       postForm.reset();
-    //     })
-    //     .catch(error => console.error('Error adding post:', error));
-    // });
+      fetch('http://localhost:3000/posts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newPost)
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Post added:', data);
+          loadPosts();
+          postForm.reset();
+        })
+        .catch(error => console.error('Error adding post:', error));
+    });
