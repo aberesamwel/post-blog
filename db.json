@@ -1,0 +1,22 @@
+// {
+//   "posts": [
+//     {
+//       "id": "2",
+//       "title": "Clean Code",
+//       "author": "Robert",
+//       "image": "https://images.pexels.com/photos/4084293/pexels-photo-4084293.jpeg"
+//     },
+//     {
+//       "id": "df19",
+//       "title": "Programmer mind",
+//       "author": "Jeff",
+//       "image": "https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg"
+//     },
+//     {
+//       "id": "df6e",
+//       "title": "Car",
+//       "author": "Baraka",
+//       "image": "https://www.pinterest.com/pin/354869645645460673/"
+//     }
+//   ]
+// }
